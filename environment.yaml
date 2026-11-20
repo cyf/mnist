@@ -1,0 +1,19 @@
+name: mnist
+channels:
+  - conda-forge
+dependencies:
+  - python=3.15
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - jupyterlab
+  - ipykernel
+  - tqdm
+  - pyyaml
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu134
+      - torch
+      - torchvision
